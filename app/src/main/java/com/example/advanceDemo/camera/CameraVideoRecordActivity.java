@@ -27,7 +27,6 @@ import com.lansosdk.box.LSLog;
 import com.lansosdk.box.VideoConcat;
 import com.lansosdk.box.VideoLayer;
 import com.lansosdk.box.onDrawPadProgressListener;
-import com.lansosdk.box.onDrawPadRecordCompletedListener;
 import com.lansosdk.videoeditor.BeautyManager;
 import com.lansosdk.videoeditor.CopyFileFromAssets;
 import com.lansosdk.videoeditor.DrawPadCameraView;

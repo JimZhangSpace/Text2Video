@@ -17,12 +17,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.advanceDemo.VideoPlayerActivity;
 import com.lansosdk.LanSongAe.LSOAeDrawable;
 import com.lansosdk.LanSongAe.LSOLoadAeJsons;
 import com.lansosdk.LanSongAe.OnLSOAeJsonLoadedListener;
 import com.lansosdk.LanSongAe.LSOTextDelegate;
 import com.lansosdk.LanSongAe.LSOAeText;
-import com.example.advanceDemo.VideoPlayerActivity;
 import com.example.advanceDemo.utils.DemoUtil;
 import com.example.advanceDemo.utils.LSOProgressDialog;
 import com.lansoeditor.advanceDemo.R;

@@ -25,7 +25,6 @@ import com.lansosdk.box.LSOOneLineText;
 import com.lansosdk.box.onDrawPadCompletedListener;
 import com.lansosdk.box.onDrawPadErrorListener;
 import com.lansosdk.box.onDrawPadProgressListener;
-import com.lansosdk.videoeditor.CopyFileFromAssets;
 import com.lansosdk.videoeditor.LSOAETextPreview;
 import com.lansosdk.videoeditor.LanSongFileUtil;
 

@@ -6,8 +6,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -19,17 +17,11 @@ import android.widget.Toast;
 
 import com.anthonycr.grant.PermissionsManager;
 import com.anthonycr.grant.PermissionsResultAction;
-import com.example.advanceDemo.aeDemo.AEInputActivity;
 import com.example.advanceDemo.aeDemo.AEListActivity;
 import com.example.advanceDemo.aeDemo.AeTextPreviewActivity;
-import com.example.advanceDemo.camera.CameraHePaiActivity;
-import com.example.advanceDemo.camera.CameraVideoRecordActivity;
-import com.example.advanceDemo.scene.GameVideoDemoActivity;
 import com.example.advanceDemo.utils.ConvertToEditModeDialog;
 import com.example.advanceDemo.utils.DemoUtil;
 import com.example.advanceDemo.utils.FileExplorerActivity;
-import com.lansosdk.box.AudioSource;
-import com.lansosdk.videoeditor.AudioPadExecute;
 import com.lansosdk.videoeditor.CopyFileFromAssets;
 import com.lansoeditor.advanceDemo.R;
 import com.lansosdk.box.LanSoEditorBox;
@@ -38,17 +30,9 @@ import com.lansosdk.videoeditor.LanSoEditor;
 import com.lansosdk.videoeditor.LanSongFileUtil;
 import com.lansosdk.videoeditor.MediaInfo;
 import com.lansosdk.videoeditor.VideoEditor;
-import com.lansosdk.videoeditor.VideoOneDo;
-import com.lansosdk.videoeditor.onVideoOneDoCompletedListener;
-import com.lansosdk.videoeditor.onVideoOneDoErrorListener;
-import com.lansosdk.videoeditor.onVideoOneDoProgressListener;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.Calendar;
-
-import com.lansosdk.LanSongFilter.LanSongSepiaFilter;
 
 public class ListMainActivity extends Activity implements OnClickListener {
 
@@ -101,32 +85,9 @@ public class ListMainActivity extends Activity implements OnClickListener {
             if (checkPath() == false)
                 return;
             switch (v.getId()) {
-                case R.id.id_mainlist_camerarecord:
-                    startDemoActivity(ListCameraRecordActivity.class);
-                    break;
-                case R.id.id_mainlist_somelayer:
-                    startDemoActivity(ListLayerDemoActivity.class);
-                    break;
-                case R.id.id_mainlist_changjing:
-                    startDemoActivity(ListSceneDemoActivity.class);
-                    break;
-                case R.id.id_mainlist_douyin:
-                    startDemoActivity(DouYinDemoActivity.class);
-                    break;
+
                 case R.id.id_mainlist_weishang:
                     startDemoActivity(AEListActivity.class);
-                    break;
-                case R.id.id_mainlist_gamevideo:
-                    startDemoActivity(GameVideoDemoActivity.class);
-                    break;
-                case R.id.id_mainlist_videoonedo:
-                    startDemoActivity(VideoOneDODemoActivity.class);
-                    break;
-                case R.id.id_mainlist_bitmaps:
-                    startDemoActivity(ListBitmapAudioActivity.class);
-                    break;
-                case R.id.id_mainlist_videoplay:
-                    startDemoActivity(VideoPlayerActivity.class);
                     break;
                 default:
                     break;

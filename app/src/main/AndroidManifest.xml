@@ -93,16 +93,7 @@
 
 
         <!-- 列表 -->
-        <activity android:name="com.example.advanceDemo.ListLayerDemoActivity"></activity>
-        <activity android:name="com.example.advanceDemo.ListSceneDemoActivity"></activity>
 
-
-        <!-- 录制类  -->
-        <activity
-            android:name="com.example.advanceDemo.ListCameraRecordActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
 
         <activity
             android:name="com.example.advanceDemo.camera.CameraLayerFullPortActivity"
@@ -158,30 +149,13 @@
             android:name="com.example.advanceDemo.layerDemo.Demo1LayerMothedActivity"
             android:screenOrientation="portrait"></activity>
 
-        <activity
-            android:name="com.example.advanceDemo.DouYinDemoActivity"
-            android:screenOrientation="portrait"></activity>
-
-        <activity android:name="com.example.advanceDemo.layerDemo.Demo2LayerMothedActivity"></activity>
         <activity android:name="com.example.advanceDemo.layerDemo.Demo3LayerFilterActivity"></activity>
 
 
         <activity android:name="com.example.advanceDemo.layerDemo.VideoSpeedDemoActivity"></activity>
 
-        <activity android:name="com.example.advanceDemo.VideoOneDODemoActivity">
-
-        </activity>
-
-
-
-
-
-        <activity android:name="com.example.advanceDemo.layerDemo.BitmapLayerMarkActivity"></activity>
-
 
         <activity android:name="com.example.advanceDemo.layerDemo.TwoVideoLayerActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.layerDemo.ExecuteTwoVideoLayerDemoActivity"></activity>
 
         <activity android:name="com.example.advanceDemo.bitmapAudio.BitmapLayerFilterDemoActivity"></activity>
 
@@ -206,16 +180,12 @@
         <activity android:name="com.example.advanceDemo.scene.ExecuteAllDrawpadActivity"></activity>
 
 
-        <activity android:name="com.example.advanceDemo.scene.GameVideoDemoActivity"></activity>
-
-
         <activity android:name="com.example.advanceDemo.scene.ParticleDemoActivity"></activity>
 
         <activity android:name="com.example.advanceDemo.scene.VViewImage3DDemoActivity"></activity>
 
 
         <!-- 图片/声音 其他类. -->
-        <activity android:name="com.example.advanceDemo.layerDemo.ExecuteCanvasLayerActivity"></activity>
 
         <activity android:name="com.example.advanceDemo.layerDemo.ExecuteVideoLayerActivity"></activity>
 
@@ -223,17 +193,13 @@
 
 
         <activity android:name="com.example.advanceDemo.bitmapAudio.DisplayFramesActivity"></activity>
-        <activity android:name="com.example.advanceDemo.ListBitmapAudioActivity"></activity>
 
-
-        <activity android:name="com.example.advanceDemo.layerDemo.CanvasLayerDemoActivity"></activity>
 
         <activity android:name="com.example.advanceDemo.bitmapAudio.BitmapEditDemoActivity"></activity>
 
 
         <!-- 播放和其他类 -->
 
-        <activity android:name="com.example.advanceDemo.VideoPlayerActivity"></activity>
         <activity android:name="com.example.advanceDemo.TestPlayNextActivity"></activity>
 
         <activity
