@@ -5,23 +5,19 @@
     android:versionCode="3100"
     android:versionName="3.1.0">
 
-
-    <uses-feature android:glEsVersion="0x00020000"></uses-feature>
-
+    <uses-feature android:glEsVersion="0x00020000" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.autofocus" />
 
-
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <!--<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+    <!-- <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" /> -->
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.RECORD_VIDEO" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
-
 
     <permission
         android:name="android.permission.FLASHLIGHT"
@@ -41,176 +37,118 @@
         android:largeHeap="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity
-            android:name="com.example.advanceDemo.ListMainActivity"
-            android:screenOrientation="portrait">
-
+            android:name="com.example.advanceDemo.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
-
-        <!--AE===============================-->
+        <!-- AE=============================== -->
         <activity
             android:name="com.example.advanceDemo.aeDemo.AEListActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
-        android:name="com.example.advanceDemo.aeDemo.AEInputActivity"
-        android:screenOrientation="portrait">
-        </activity>
-
+            android:name="com.example.advanceDemo.aeDemo.AEInputActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.advanceDemo.aeDemo.AEPreviewActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.advanceDemo.aeDemo.AeTextPreviewActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
-
-
-
-        <!--<activity-->
-            <!--android:name="com.example.advanceDemo.aeDemo.VideoSlideShowActivity"-->
-            <!--android:screenOrientation="portrait">-->
-        <!--</activity>-->
-        <activity android:name="com.example.advanceDemo.aeDemo.AERecordFileHintActivity"
             android:screenOrientation="portrait"></activity>
 
-        <activity android:name="com.example.advanceDemo.aeDemo.PlayerAEDemoActivity"
+        <!-- <activity -->
+        <!-- android:name="com.example.advanceDemo.aeDemo.VideoSlideShowActivity" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.example.advanceDemo.aeDemo.AERecordFileHintActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.advanceDemo.aeDemo.PlayerAEDemoActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
         <!-- 列表 -->
-
 
         <activity
             android:name="com.example.advanceDemo.camera.CameraLayerFullPortActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
-
-        </activity>
-
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
             android:name="com.example.advanceDemo.camera.CameraLayerFullPortWithMp3Activity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
-
-
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.example.advanceDemo.camera.CameraSubLayerDemo1Activity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.example.advanceDemo.camera.CameraSubLayerDemo2Activity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.example.advanceDemo.camera.CameraLayerFullSegmentActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.example.advanceDemo.camera.CameraHePaiActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-
-
-
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name="com.example.advanceDemo.camera.CameraLayerFullLandscapeActivity"
             android:screenOrientation="landscape"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name="com.example.advanceDemo.camera.CameraLayerKTVDemoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
 
         <!-- 基本图层类 -->
         <activity
             android:name="com.example.advanceDemo.layerDemo.Demo1LayerMothedActivity"
-            android:screenOrientation="portrait"></activity>
-
-        <activity android:name="com.example.advanceDemo.layerDemo.Demo3LayerFilterActivity"></activity>
-
-
-        <activity android:name="com.example.advanceDemo.layerDemo.VideoSpeedDemoActivity"></activity>
-
-
-        <activity android:name="com.example.advanceDemo.layerDemo.TwoVideoLayerActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.bitmapAudio.BitmapLayerFilterDemoActivity"></activity>
-
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.advanceDemo.layerDemo.Demo3LayerFilterActivity" />
+        <activity android:name="com.example.advanceDemo.layerDemo.VideoSpeedDemoActivity" />
+        <activity android:name="com.example.advanceDemo.layerDemo.TwoVideoLayerActivity" />
+        <activity android:name="com.example.advanceDemo.bitmapAudio.BitmapLayerFilterDemoActivity" />
         <activity
             android:name="com.example.advanceDemo.scene.VideoSeekActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-        </activity>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
 
         <!-- 场景举例 -->
-        <activity android:name="com.example.advanceDemo.scene.LayerLayoutDemoActivity"></activity>
-        <activity android:name="com.example.advanceDemo.scene.TwoVideoLayoutActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.scene.VideoLayerTransformActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.scene.MoreLayHeadSeekActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.scene.VideoLayerAutoUpdateActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.scene.PicturesSlideDemoActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.scene.ExecuteAllDrawpadActivity"></activity>
-
-
-        <activity android:name="com.example.advanceDemo.scene.ParticleDemoActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.scene.VViewImage3DDemoActivity"></activity>
-
+        <activity android:name="com.example.advanceDemo.scene.LayerLayoutDemoActivity" />
+        <activity android:name="com.example.advanceDemo.scene.TwoVideoLayoutActivity" />
+        <activity android:name="com.example.advanceDemo.scene.VideoLayerTransformActivity" />
+        <activity android:name="com.example.advanceDemo.scene.MoreLayHeadSeekActivity" />
+        <activity android:name="com.example.advanceDemo.scene.VideoLayerAutoUpdateActivity" />
+        <activity android:name="com.example.advanceDemo.scene.PicturesSlideDemoActivity" />
+        <activity android:name="com.example.advanceDemo.scene.ExecuteAllDrawpadActivity" />
+        <activity android:name="com.example.advanceDemo.scene.ParticleDemoActivity" />
+        <activity android:name="com.example.advanceDemo.scene.VViewImage3DDemoActivity" />
 
         <!-- 图片/声音 其他类. -->
 
-        <activity android:name="com.example.advanceDemo.layerDemo.ExecuteVideoLayerActivity"></activity>
-
-        <activity android:name="com.example.advanceDemo.bitmapAudio.ExtractVideoFrameDemoActivity"></activity>
-
-
-        <activity android:name="com.example.advanceDemo.bitmapAudio.DisplayFramesActivity"></activity>
-
-
-        <activity android:name="com.example.advanceDemo.bitmapAudio.BitmapEditDemoActivity"></activity>
-
+        <activity android:name="com.example.advanceDemo.layerDemo.ExecuteVideoLayerActivity" />
+        <activity android:name="com.example.advanceDemo.bitmapAudio.ExtractVideoFrameDemoActivity" />
+        <activity android:name="com.example.advanceDemo.bitmapAudio.DisplayFramesActivity" />
+        <activity android:name="com.example.advanceDemo.bitmapAudio.BitmapEditDemoActivity" />
 
         <!-- 播放和其他类 -->
 
-        <activity android:name="com.example.advanceDemo.TestPlayNextActivity"></activity>
-
+        <activity android:name="com.example.advanceDemo.TestPlayNextActivity" />
         <activity
             android:name="com.example.advanceDemo.utils.FileExplorerActivity"
-            android:label="@string/select_video"></activity>
-
-
-        <activity android:name="com.example.advanceDemo.scene.ExecuteBitmapLayerActivity"></activity>
-        <activity android:name="com.example.advanceDemo.layerDemo.ViewLayerDemoActivity"></activity>
-        <activity android:name="com.example.advanceDemo.layerDemo.ViewLayerOnlyActivity"></activity>
-        <activity android:name="com.example.advanceDemo.layerDemo.MVLayerDemoActivity"></activity>
+            android:label="@string/select_video" />
+        <activity android:name="com.example.advanceDemo.scene.ExecuteBitmapLayerActivity" />
+        <activity android:name="com.example.advanceDemo.layerDemo.ViewLayerDemoActivity" />
+        <activity android:name="com.example.advanceDemo.layerDemo.ViewLayerOnlyActivity" />
+        <activity android:name="com.example.advanceDemo.layerDemo.MVLayerDemoActivity" />
     </application>
 
 </manifest>
